@@ -50,7 +50,7 @@ def generate_image():
         model.to("cuda" if torch.cuda.is_available() else "cpu")
 
         # Generate image
-        image = model(prompt, num_inference_steps=30).images[0]
+        image = model(prompt, num_inference_steps=50).images[0]
         image.save(image_path)
 
         return jsonify({"image_url": f"/static/{filename}", "image_name": prompt})

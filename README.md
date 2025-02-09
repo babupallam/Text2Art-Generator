@@ -130,3 +130,6 @@ Each image is generated based on **text prompts** using an **AI diffusion model*
 ✔️ **Download & View Image Modal** with zoom functionality  
 ✔️ **Performance tuning** for faster image generation  
 
+
+---
+

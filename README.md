@@ -97,6 +97,35 @@ The image generation quality is optimized using the following parameters:
 
 ---
 
+
+## 📸 **Screenshots Demonstration of the App**
+Below are the key screenshots demonstrating how the **AI Image Generator** works, from entering a prompt to downloading the final AI-generated image.
+
+<p align="center">
+  <img src="app_screenshots/01_app_front.png" width="250">
+  <img src="app_screenshots/02_after_generating_output.png" width="250">
+  <img src="app_screenshots/03_while_generating_the_image.png" width="250">
+</p>
+<p align="center">
+  <img src="app_screenshots/04_pop_up_for_download_option.png" width="250">
+  <img src="app_screenshots/05_backend_terminal_generation_progress.png" width="250">
+</p>
+
+---
+
+## 🎨 **Sample AI-Generated Images**
+Below are **sample images generated** using the implemented AI model in this project.
+
+<p align="center">
+  <img src="generated_Images/A_fairy_tale_castle_in_the_clouds_f2289f3f.png" width="250">
+  <img src="generated_Images/A_magical_forest_with_glowing_trees_86beca95.png" width="250">
+  <img src="generated_Images/An_astronaut_exploring_an_alien_planet_e8246152.png" width="250">
+  <img src="generated_Images/smiling_dog_with_a_football_0d77da22.png" width="250">
+</p>
+
+Each image is generated based on **text prompts** using an **AI diffusion model** locally.
+
+---
 ### 🚀 **Enhancements & Features**
 ✔️ **Real-time UI updates** when generating images  
 ✔️ **Material UI Design** for a sleek, modern look  

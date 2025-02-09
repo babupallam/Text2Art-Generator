@@ -1,15 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Text2Art Generator</title>
+    <title>AI Image Generator</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
 <body>
     <h1>AI Image Generator</h1>
-    <input type="text" id="prompt" placeholder="Enter your text prompt">
-    <button onclick="generateImage()">Generate</button>
-    <br>
-    <img id="output" width="400">
+
+    <!-- Example Prompts -->
+    <div id="example-prompts">
+        <span class="prompt-example" onclick="setPrompt(this)">A futuristic cyberpunk city</span>
+        <span class="prompt-example" onclick="setPrompt(this)">A magical forest with glowing trees</span>
+        <span class="prompt-example" onclick="setPrompt(this)">A robot painting a masterpiece</span>
+        <span class="prompt-example" onclick="setPrompt(this)">An astronaut exploring an alien planet</span>
+        <span class="prompt-example" onclick="setPrompt(this)">A fairy tale castle in the clouds</span>
+    </div>
+
+    <div class="input-container">
+        <input type="text" id="prompt" placeholder="Enter your text prompt">
+        <button id="generateBtn">Generate</button>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay">
+        <div class="loader"></div>
+        <p>Generating image, please wait...</p>
+    </div>
+
+    <!-- Gallery -->
+    <div id="gallery">
+        <!-- Images will be added dynamically here -->
+    </div>
+
+    <!-- Fullscreen Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img id="modalImage" class="modal-content">
+        <a id="downloadBtn" download="generated_image.png">Download</a>
+    </div>
 </body>
 </html>

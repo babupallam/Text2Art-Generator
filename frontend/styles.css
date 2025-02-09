@@ -62,7 +62,7 @@ button:disabled {
 }
 
 .image-card {
-    width: 250px; /* Fixed width for consistency */
+    width: 200px; /* Fixed width for consistency */
     text-align: center;
     border: 1px solid #ccc;
     border-radius: 8px;

@@ -58,7 +58,7 @@ async function generateImage() {
         let data = await response.json();
 
         if (data.image_url) {
-            addImageToGallery(data.image_url, data.image_name);
+            addImageToGallery(data.image_url, data.image_name, true);
         } else {
             alert("Error generating image: " + data.error);
         }
@@ -71,9 +71,11 @@ async function generateImage() {
     }
 }
 
-// ✅ Show correct name for each image with no hyphens or hash codes
-function addImageToGallery(imageUrl, promptText) {
-    let gallery = document.getElementById("gallery");
+// ✅ Function to add images correctly (Latest + Gallery)
+function addImageToGallery(imageUrl, promptText, isLatest = false) {
+    let container = isLatest
+        ? document.getElementById("latest-image-section")  // Show latest image separately
+        : document.getElementById("gallery");              // Keep older images in gallery
 
     let card = document.createElement("div");
     card.className = "image-card";
@@ -83,16 +85,20 @@ function addImageToGallery(imageUrl, promptText) {
     img.src = imageUrl;
     img.className = "gallery-image";
 
-    // Remove hash at end and replace underscores/hyphens with spaces
-    let cleanName = promptText.replace(/[_-]/g, " ").replace(/\s+\S{6,}$/, "");
-
     let caption = document.createElement("p");
     caption.className = "image-caption";
-    caption.textContent = cleanName;
+    caption.textContent = promptText;
 
     card.appendChild(img);
     card.appendChild(caption);
-    gallery.prepend(card);
+
+    if (isLatest) {
+        container.innerHTML = ""; // ✅ Clear previous latest image
+        document.getElementById("latest-image-container").style.display = "block"; // ✅ Show section when an image is generated
+    }
+
+
+    container.prepend(card);
 }
 
 

@@ -38,11 +38,15 @@
     <h3>Previously Generated Images</h3>
     <div id="gallery"></div>
 
-    <!-- Fullscreen Image Modal -->
+    <!-- ✅ Modal Overlay -->
+    <div id="modalOverlay" class="modal-overlay"></div>
+
+    <!-- ✅ Image Modal -->
     <div id="imageModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img id="modalImage" class="modal-content">
-        <a id="downloadBtn" download="generated_image.png">Download</a>
+        <span class="modal-close" onclick="closeModal()">✖</span>
+        <img id="modalImage" src="" alt="Generated Image">
+        <a id="downloadImage" class="modal-download" href="#" download>Download</a>
     </div>
+
 </body>
 </html>

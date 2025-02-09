@@ -102,18 +102,28 @@ function addImageToGallery(imageUrl, promptText, isLatest = false) {
 }
 
 
-// Open Modal to View Large Image
-function openModal(imageSrc) {
+
+
+function openModal(imageUrl) {
     let modal = document.getElementById("imageModal");
     let modalImage = document.getElementById("modalImage");
-    let downloadBtn = document.getElementById("downloadBtn");
+    let modalOverlay = document.getElementById("modalOverlay");
+    let downloadBtn = document.getElementById("downloadImage");
 
     modal.style.display = "block";
-    modalImage.src = imageSrc;
-    downloadBtn.href = imageSrc;
+    modalOverlay.style.display = "block";  // ✅ Show overlay
+    modalImage.src = imageUrl;
+
+    downloadBtn.href = imageUrl; // ✅ Correct download link
+    downloadBtn.download = imageUrl.split('/').pop(); // ✅ Set filename
+
+    // ✅ Close when clicking outside the modal
+    modalOverlay.onclick = function () {
+        closeModal();
+    };
 }
 
-// Close Modal
 function closeModal() {
     document.getElementById("imageModal").style.display = "none";
+    document.getElementById("modalOverlay").style.display = "none";
 }

@@ -118,7 +118,8 @@ Below are **sample images generated** using the implemented AI model in this pro
   <img src="generated_Images/A_fairy_tale_castle_in_the_clouds_f2289f3f.png" width="250">
   <img src="generated_Images/A_magical_forest_with_glowing_trees_86beca95.png" width="250">
   <img src="generated_Images/An_astronaut_exploring_an_alien_planet_e8246152.png" width="250">
-  <img src="generated_Images/smiling_dog_with_a_football_0d77da22.png" width="250">
+  <img src="generated_Images/smiling_labrador_with_football_ee9d6b09.png" width="250">
+  <img src="generated_Images/smiling_labrador_with_football_686975be.png" width="250">
 </p>
 
 Each image is generated based on **text prompts** using an **AI diffusion model** locally.

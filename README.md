@@ -1,8 +1,8 @@
-# 🖼️ AI Image Generator
+# 🖼️ Text2Art-Generator
 
-### 🚀 **Overview: AI Image Generator with Local AI Model Evaluation**  
+### 🚀 **Overview: Text2Art-Generator with Local AI Model Evaluation**  
 
-The **AI Image Generator** is a **web-based application** designed to **generate images from text prompts** using **AI Diffusion models locally**. The main objective is to **experiment with AI models** on **local hardware** without relying on cloud-based APIs. This project is an **end-to-end implementation** that includes **image generation, model evaluation, and accuracy analysis**.  
+The **Text2Art-Generator** is a **web-based application** designed to **generate images from text prompts** using **AI Diffusion models locally**. The main objective is to **experiment with AI models** on **local hardware** without relying on cloud-based APIs. This project is an **end-to-end implementation** that includes **image generation, model evaluation, and accuracy analysis**.  
 
 🔹 **Core Features:**  
 ✅ Generate **AI-powered images** from textual descriptions.  
@@ -13,7 +13,7 @@ The **AI Image Generator** is a **web-based application** designed to **generate
 ✅ Back-end: **Flask-based API** for handling requests and model inference.  
 
 ### 🧠 **Focus on AI Model Implementation & Evaluation**
-Unlike traditional AI image generators relying on **external APIs**, this project focuses on **implementing AI models locally** for:  
+Unlike traditional Text2Art-Generators relying on **external APIs**, this project focuses on **implementing AI models locally** for:  
 1. **Generating images using local AI models** (e.g., **Stable Diffusion, SmolModels, or Custom LLMs**).  
 2. **Understanding how AI models work internally** for **image synthesis**.  
 3. **Evaluating AI model accuracy** through **advanced techniques** like:  
@@ -67,7 +67,7 @@ This repository follows a **structured modular approach**, separating **backend,
 
 ### 🛠 **Implementation Specifications**
 
-This project is a **Flask-based AI Image Generator** that utilizes a **text-to-image generation model** to create AI-generated images based on user prompts.
+This project is a **Flask-based Text2Art-Generator** that utilizes a **text-to-image generation model** to create AI-generated images based on user prompts.
 
 #### 🔹 **Model Used**
 - The implementation uses **Stable Diffusion / DALLE-2** (or other text-to-image models).

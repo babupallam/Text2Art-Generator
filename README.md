@@ -1,6 +1,6 @@
 # 🖼️ Text2Art-Generator
 
-### 🚀 **Overview: Text2Art-Generator with Local AI Model Evaluation**  
+## 🚀 **Overview: Text2Art-Generator with Local AI Model Evaluation**  
 
 The **Text2Art-Generator** is a **web-based application** designed to **generate images from text prompts** using **AI Diffusion models locally**. The main objective is to **experiment with AI models** on **local hardware** without relying on cloud-based APIs. This project is an **end-to-end implementation** that includes **image generation, model evaluation, and accuracy analysis**.  
 
@@ -32,7 +32,7 @@ This project is ideal for:
 ---
 
 ---
-### 🏗 **Project Structure**
+## 🏗 **Project Structure**
 
 This repository follows a **structured modular approach**, separating **backend, frontend, and generated assets** for better maintainability and scalability.
 
@@ -65,7 +65,7 @@ This repository follows a **structured modular approach**, separating **backend,
 
 ---
 
-### 🛠 **Implementation Specifications**
+## 🛠 **Implementation Specifications**
 
 This project is a **Flask-based Text2Art-Generator** that utilizes a **text-to-image generation model** to create AI-generated images based on user prompts.
 
@@ -98,7 +98,7 @@ The image generation quality is optimized using the following parameters:
 ---
 
 
-### 📸 **Screenshots Demonstration of the App**
+## 📸 **Screenshots Demonstration of the App**
 Below are the key screenshots demonstrating how the **AI Image Generator** works, from entering a prompt to downloading the final AI-generated image.
 
 <p align="center">
@@ -111,7 +111,7 @@ Below are the key screenshots demonstrating how the **AI Image Generator** works
 
 ---
 
-### 🎨 **Sample AI-Generated Images**
+## 🎨 **Sample AI-Generated Images**
 Below are **sample images generated** using the implemented AI model in this project.
 
 <p align="center">
@@ -125,7 +125,80 @@ Below are **sample images generated** using the implemented AI model in this pro
 Each image is generated based on **text prompts** using an **AI diffusion model** locally.
 
 ---
-### 🚀 **Enhancements & Features**
+
+## 🚀 How to Run the Application
+
+Follow these steps to set up and run the **AI Image Generator** on your local machine.
+
+### **1️⃣ Clone the Repository**
+First, clone this GitHub repository:
+```sh
+git clone https://github.com/babupallam/Text2Art-Generator.git
+cd Text2Art-Generator
+```
+
+---
+
+### **2️⃣ Set Up a Virtual Environment**
+It is recommended to use a virtual environment to manage dependencies.
+
+#### **For Windows (Command Prompt / PowerShell)**
+```sh
+python -m venv venv
+venv\Scripts\activate
+```
+#### **For macOS / Linux**
+```sh
+python3 -m venv venv
+source venv/bin/activate
+```
+
+---
+
+### **3️⃣ Install Dependencies**
+Once the virtual environment is activated, install all required dependencies using:
+```sh
+pip install -r requirements.txt
+```
+This ensures that Flask, AI models, and all necessary libraries are installed.
+
+---
+
+### **4️⃣ Run the Flask Backend**
+Start the backend server using:
+```sh
+python backend/app.py
+```
+The server will start, and you should see an output like:
+```
+ * Running on http://127.0.0.1:5000/
+```
+
+---
+
+### **5️⃣ Open the Frontend**
+Now, open `index.html` in your browser (inside the `frontend` folder). Alternatively, you can start a simple HTTP server:
+```sh
+cd frontend
+python -m http.server 8000
+```
+Then, visit **http://127.0.0.1:8000/** in your browser.
+
+---
+
+### **6️⃣ Generate Images**
+- Enter a text prompt and click **"Generate"**.
+- The AI model will process the input and generate an image.
+- You can view the latest generated image or browse previously created images in the gallery.
+- Click on an image to view it in full size and download it.
+
+---
+
+### **7️⃣ Stopping the Server**
+To stop the Flask server, press `CTRL + C` in the terminal.
+
+---
+## 🚀 **Enhancements & Features**
 ✔️ **Real-time UI updates** when generating images  
 ✔️ **Material UI Design** for a sleek, modern look  
 ✔️ **Download & View Image Modal** with zoom functionality  

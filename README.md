@@ -1,9 +1,35 @@
 # 🖼️ AI Image Generator
 
-🚀 Overview
+### 🚀 **Overview: AI Image Generator with Local AI Model Evaluation**  
 
-The AI Image Generator is a web-based application that allows users to generate images from text prompts using AI models. Users can view the latest generated image, browse previously created images in a gallery, and download them. The front-end is built with HTML, CSS, and JavaScript, and the back-end is powered by Flask.
+The **AI Image Generator** is a **web-based application** designed to **generate images from text prompts** using **AI Diffusion models locally**. The main objective is to **experiment with AI models** on **local hardware** without relying on cloud-based APIs. This project is an **end-to-end implementation** that includes **image generation, model evaluation, and accuracy analysis**.  
 
+🔹 **Core Features:**  
+✅ Generate **AI-powered images** from textual descriptions.  
+✅ Experiment with **different AI models** locally for benchmarking.  
+✅ Implement **advanced techniques** to **analyze and compare model accuracy**.  
+✅ Browse and download generated images via an interactive **Material UI-based gallery**.  
+✅ Front-end: **HTML, CSS, JavaScript** (Material Design)  
+✅ Back-end: **Flask-based API** for handling requests and model inference.  
+
+### 🧠 **Focus on AI Model Implementation & Evaluation**
+Unlike traditional AI image generators relying on **external APIs**, this project focuses on **implementing AI models locally** for:  
+1. **Generating images using local AI models** (e.g., **Stable Diffusion, SmolModels, or Custom LLMs**).  
+2. **Understanding how AI models work internally** for **image synthesis**.  
+3. **Evaluating AI model accuracy** through **advanced techniques** like:  
+   - Perceptual similarity metrics (**LPIPS, SSIM, PSNR**).  
+   - Latent space analysis for **model behavior interpretation**.  
+   - Prompt embedding **performance benchmarking**.  
+
+### 🏆 **Why This Project Matters?**
+This implementation **bridges the gap** between **research & practical application** by enabling **on-device AI experimentation**. It serves as a **learning and research tool** for understanding **AI-generated images**, measuring **model efficiency**, and **validating accuracy through advanced evaluation methods**.  
+
+This project is ideal for:  
+🔹 AI researchers & developers exploring **image generation models**.  
+🔹 Engineers looking to **fine-tune AI diffusion models** locally.  
+🔹 Experimenting with **low-resource AI inference** for real-world applications.  
+
+---
 
 ---
 ### 🏗 **Project Structure**

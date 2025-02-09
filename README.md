@@ -98,24 +98,20 @@ The image generation quality is optimized using the following parameters:
 ---
 
 
-## 📸 **Screenshots Demonstration of the App**
+### 📸 **Screenshots Demonstration of the App**
 Below are the key screenshots demonstrating how the **AI Image Generator** works, from entering a prompt to downloading the final AI-generated image.
 
 <p align="center">
-<div>
-<img src="app_screenshots/01_app_front.png" width="250">
-  <img src="app_screenshots/02_after_generating_output.png" width="250">
-  <img src="app_screenshots/03_while_generating_the_image.png" width="250">
-</div>
-   <div>
-  <img src="app_screenshots/04_pop_up_for_download_option.png" width="250">
-  <img src="app_screenshots/05_backend_terminal_generation_progress.png" width="250">
-</div>
+  <img src="./app_screenshots/01_app_front.png" width="250">
+  <img src="./app_screenshots/02_after_generating_output.png" width="250">
+  <img src="./app_screenshots/03_while_generating_the_image.png" width="250">
+  <img src="./app_screenshots/04_pop_up_for_download_option.png" width="250">
+  <img src="./app_screenshots/05_backend_terminal_generation_progress.png" width="250">
 </p>
 
 ---
 
-## 🎨 **Sample AI-Generated Images**
+### 🎨 **Sample AI-Generated Images**
 Below are **sample images generated** using the implemented AI model in this project.
 
 <p align="center">

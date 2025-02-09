@@ -71,7 +71,7 @@ async function generateImage() {
     }
 }
 
-// ✅ Show correct name for each image
+// ✅ Show correct name for each image with no hyphens or hash codes
 function addImageToGallery(imageUrl, promptText) {
     let gallery = document.getElementById("gallery");
 
@@ -81,14 +81,20 @@ function addImageToGallery(imageUrl, promptText) {
 
     let img = document.createElement("img");
     img.src = imageUrl;
+    img.className = "gallery-image";
+
+    // Remove hash at end and replace underscores/hyphens with spaces
+    let cleanName = promptText.replace(/[_-]/g, " ").replace(/\s+\S{6,}$/, "");
 
     let caption = document.createElement("p");
-    caption.textContent = promptText;  // Set correct name instead of "Previous Image"
+    caption.className = "image-caption";
+    caption.textContent = cleanName;
 
     card.appendChild(img);
     card.appendChild(caption);
     gallery.prepend(card);
 }
+
 
 // Open Modal to View Large Image
 function openModal(imageSrc) {

@@ -58,12 +58,27 @@ def generate_image():
         return jsonify({"error": str(e)}), 500
 
 # ✅ List all images with filenames
+
 @app.route('/list-images', methods=['GET'])
 def list_images():
     files = os.listdir(OUTPUT_FOLDER)
-    images = [{"url": f"/static/{file}", "name": file.split("_")[0].replace("_", " ")}
-              for file in files if file.endswith((".png", ".jpg", ".jpeg"))]
+
+    images = []
+    for file in files:
+        if file.endswith((".png", ".jpg", ".jpeg")):
+            # Remove file extension
+            name_without_ext = os.path.splitext(file)[0]
+
+            # Remove random hash (last part after _ or - if it's a mix of letters/numbers)
+            clean_name = re.sub(r'[_-][a-f0-9]{6,}$', '', name_without_ext)
+
+            # Replace underscores and hyphens with spaces
+            clean_name = clean_name.replace("_", " ").replace("-", " ")
+
+            images.append({"url": f"/static/{file}", "name": clean_name})
+
     return jsonify({"images": images})
+
 
 # ✅ Serve generated static images
 @app.route('/static/<filename>')

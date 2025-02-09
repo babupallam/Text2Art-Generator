@@ -62,17 +62,41 @@ button:disabled {
 }
 
 .image-card {
-    margin: 10px;
-    border: 2px solid black;
-    padding: 5px;
-    width: 200px;
-    cursor: pointer;
+    width: 250px; /* Fixed width for consistency */
     text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 
 .image-card img {
     width: 100%;
     height: auto;
+}
+
+
+/* ✅ Prevents large images from breaking layout */
+.gallery-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* ✅ Ensures caption stays inside the card and does not overflow */
+.image-caption {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    word-wrap: break-word; /* Ensures long text wraps */
+    white-space: normal;
+    overflow-wrap: break-word;
+    max-width: 100%; /* Prevents text from overflowing */
+    padding: 5px;
 }
 
 /* Modal (Fullscreen Image View) */
